@@ -1,4 +1,3 @@
-import 'package:cervantesrutas/pagina_siete.dart';
 import 'package:flutter/material.dart';
 
 import 'package:cervantesrutas/pagina_inicial.dart';
@@ -7,6 +6,7 @@ import 'package:cervantesrutas/pagina_tres.dart';
 import 'package:cervantesrutas/pagina_cuatro.dart';
 import 'package:cervantesrutas/pagina_cinco.dart';
 import 'package:cervantesrutas/pagina_seis.dart';
+import 'package:cervantesrutas/pagina_siete.dart';
 
 void main() => runApp(MiRutas());
 

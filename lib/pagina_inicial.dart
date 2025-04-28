@@ -15,13 +15,22 @@ class PantallaUno extends StatelessWidget {
             fontSize: 20.0, // Tamaño de la letra 20
           ),
         ),
-        centerTitle: true, // Centrar el texto
+        centerTitle: true, // Centrar el texto del AppBar
       ),
       body: Column(
         children: [
-          SizedBox(
-            height: 30,
+          const SizedBox(height: 30),
+          const Center(
+            // <-- Aquí envolvemos el título en un Center
+            child: Text(
+              'Luis Cesar Cervantes Velazquez 1057',
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
           ),
+          const SizedBox(height: 30),
           Center(
             child: ElevatedButton(
               onPressed: () {
@@ -30,9 +39,7 @@ class PantallaUno extends StatelessWidget {
               child: const Text('Pantalla Dos'),
             ),
           ),
-          SizedBox(
-            height: 30,
-          ),
+          const SizedBox(height: 30),
           Center(
             child: ElevatedButton(
               onPressed: () {
@@ -41,9 +48,7 @@ class PantallaUno extends StatelessWidget {
               child: const Text('Pantalla Tres'),
             ),
           ),
-          SizedBox(
-            height: 30,
-          ),
+          const SizedBox(height: 30),
           Center(
             child: ElevatedButton(
               onPressed: () {
@@ -52,9 +57,7 @@ class PantallaUno extends StatelessWidget {
               child: const Text('Pantalla Cuatro'),
             ),
           ),
-          SizedBox(
-            height: 30,
-          ),
+          const SizedBox(height: 30),
           Center(
             child: ElevatedButton(
               onPressed: () {
@@ -63,9 +66,7 @@ class PantallaUno extends StatelessWidget {
               child: const Text('Pantalla Cinco'),
             ),
           ),
-          SizedBox(
-            height: 30,
-          ),
+          const SizedBox(height: 30),
           Center(
             child: ElevatedButton(
               onPressed: () {
@@ -74,9 +75,7 @@ class PantallaUno extends StatelessWidget {
               child: const Text('Pantalla Seis'),
             ),
           ),
-          SizedBox(
-            height: 30,
-          ),
+          const SizedBox(height: 30),
           Center(
             child: ElevatedButton(
               onPressed: () {
