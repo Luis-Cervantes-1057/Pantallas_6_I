@@ -7,23 +7,51 @@ class PantallaDos extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color(0xff368c57), // Fondo azul
+        backgroundColor: const Color(0xff368c57), // Fondo verde
         title: const Text(
           'Pantalla Dos',
           style: TextStyle(
-            color: Colors.black, // Letra blanca
-            fontSize: 20.0, // Tamaño de la letra 20
+            color: Colors.black, // Letra negra
+            fontSize: 20.0,
           ),
         ),
-        centerTitle: true, // Centrar el texto
+        centerTitle: true,
       ),
-      body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          child: const Text('Pantalla Inicial MiChavo'),
-        ),
+      body: Column(
+        children: [
+          SizedBox(
+            height: 40,
+          ),
+          Center(
+            child: Stack(
+              alignment: AlignmentDirectional.center,
+              children: <Widget>[
+                SizedBox(
+                  width: 200.0,
+                  height: 100.0,
+                  child: ElevatedButton(
+                    onPressed: () {},
+                    child: null,
+                  ),
+                ),
+                SizedBox(
+                  width: 100.0,
+                  height: 200.0,
+                  child: AbsorbPointer(
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor:
+                            Colors.blue.shade200, // Corrección aquí
+                      ),
+                      onPressed: () {},
+                      child: null,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
       ),
     );
   }
