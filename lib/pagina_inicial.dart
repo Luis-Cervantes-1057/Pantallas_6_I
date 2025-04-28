@@ -36,7 +36,7 @@ class PantallaUno extends StatelessWidget {
               onPressed: () {
                 Navigator.pushNamed(context, '/pantalla2');
               },
-              child: const Text('Pantalla Dos'),
+              child: const Text('Pantalla Uno'),
             ),
           ),
           const SizedBox(height: 30),
@@ -45,7 +45,7 @@ class PantallaUno extends StatelessWidget {
               onPressed: () {
                 Navigator.pushNamed(context, '/pantalla3');
               },
-              child: const Text('Pantalla Tres'),
+              child: const Text('Pantalla Dos'),
             ),
           ),
           const SizedBox(height: 30),
@@ -54,7 +54,7 @@ class PantallaUno extends StatelessWidget {
               onPressed: () {
                 Navigator.pushNamed(context, '/pantalla4');
               },
-              child: const Text('Pantalla Cuatro'),
+              child: const Text('Pantalla Tres'),
             ),
           ),
           const SizedBox(height: 30),
@@ -63,7 +63,7 @@ class PantallaUno extends StatelessWidget {
               onPressed: () {
                 Navigator.pushNamed(context, '/pantalla5');
               },
-              child: const Text('Pantalla Cinco'),
+              child: const Text('Pantalla Cuatro'),
             ),
           ),
           const SizedBox(height: 30),
@@ -72,7 +72,7 @@ class PantallaUno extends StatelessWidget {
               onPressed: () {
                 Navigator.pushNamed(context, '/pantalla6');
               },
-              child: const Text('Pantalla Seis'),
+              child: const Text('Pantalla Cinco'),
             ),
           ),
           const SizedBox(height: 30),
@@ -81,7 +81,7 @@ class PantallaUno extends StatelessWidget {
               onPressed: () {
                 Navigator.pushNamed(context, '/pantalla7');
               },
-              child: const Text('Pantalla Siete'),
+              child: const Text('Pantalla Seis'),
             ),
           ),
         ],
